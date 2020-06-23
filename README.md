@@ -13,9 +13,15 @@ The following sections describe how to setup xMatters and pgDash so that these
 events can be raised. Note that this is a one-way integration, from pgDash
 to xMatters.
 
+--------
+
 <kbd>
-  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+<a href="https://support.xmatters.com/hc/en-us/community/topics">
+   <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+</a>
 </kbd>
+
+--------
 
 # Prerequisites
 
@@ -24,12 +30,12 @@ to xMatters.
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
-* [pgDash.zip](pgDash.zip) - The xMatters *Communication Plan* that receives
+* [pgDash.zip](pgDash.zip) - The xMatters *Workflow* that receives
   pgDash alerts
 
 # How it works
 
-The xMatters communication plan provides two inbound integrations (unique
+The xMatters workflow provides two inbound integrations (unique
 URL endpoints). pgDash does an HTTP POST to these endpoints with a payload
 containing the properties as defined in the xMatters forms whenever alerts
 or change alerts happen.
@@ -38,12 +44,12 @@ or change alerts happen.
 
 ## xMatters set up
 
-1. Download the communication plan [pgDash.zip](pgDash.zip) file and import 
+1. Download the workflow [pgDash.zip](pgDash.zip) file and import 
    it into your xMatters account. See the
    [help docs](http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
    for more info. You should see a new entry "pgDash"in  your
-   "Communication Plans" page (Developer -> Communication Plans).
-2. This communication plan comes with two inbound integrations, one for use
+   "Workflows" page).
+2. This workflow comes with two inbound integrations, one for use
    with pgDash "Alerts" and for use with pgDash "Change Alerts". Copy the
    integration URL for each of these. The "URL Authentication" type is the
    easiest to integrate with pgDash. See the [help docs](https://help.xmatters.com/ondemand/xmodwelcome/integrationbuilder/generate-urls.htm)
